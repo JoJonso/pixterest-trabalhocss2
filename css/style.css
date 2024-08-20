@@ -28,7 +28,7 @@ p {
 }
 footer > p {
   margin: 12px;
-  color: #706462;
+  color: #ABA3A1;
   font-size: 1rem;
 
 }
@@ -108,7 +108,7 @@ body {
 
 /** GALERIA **/
 .gallery-container {
-  margin-top: 512px;
+  margin-top: 256px;
   display: grid;
   grid-template-columns: repeat(4,256px);
   gap: 12px;
