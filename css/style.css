@@ -177,7 +177,6 @@ label {
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 8px;
-
   position: relative;
   padding-left: 35px;
   margin-top: 12px;
@@ -192,7 +191,6 @@ label {
   color:#b49e99
 
 }
-
 /* Hide the browser's default checkbox */
 .container input {
   position: absolute;
@@ -201,7 +199,6 @@ label {
   height: 0;
   width: 0;
 }
-
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
@@ -211,29 +208,24 @@ label {
   width: 25px;
   background-color: #ffffff;
 }
-
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #ffffff;
 }
-
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #E52C00
 }
-
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-
 /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
 }
-
 /* Style the checkmark/indicator */
 .container .checkmark:after {
   left: 9px;
@@ -250,10 +242,8 @@ label {
 footer {
   width: auto;
   height: 96px;
-
   display: flex;
   flex-flow: column;
-
   background-color: #1E1614;
   margin-top: auto;
 }
@@ -324,9 +314,7 @@ footer {
   }
   figcaption {
     display: none;
-
   }
-
 }
 @media (max-width: 500px) {
   .mountain {
@@ -338,7 +326,6 @@ footer {
   .text-main2 {
     margin-bottom: 96px;
     grid-template-columns: 1fr;
-  
   }
   /** GALERIA **/
   .gallery-container {
@@ -350,7 +337,6 @@ footer {
   }
   figcaption {
     display: none;
-
   }
 }
 
