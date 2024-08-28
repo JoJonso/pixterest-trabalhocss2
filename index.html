@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="sobre"></div>
     <header>
             <a href="index.html"><img class="logo" src="images/logo.webp" alt="Logo do site"></a>
             <div class="menu">
@@ -44,7 +43,7 @@
     </header>
     <main class="container-main">
             <!-- PRIMEIRA SESSÃO -->
-            <div class="text-main1">
+            <div id="sobre" class="text-main1">
                     <div>
                         <h1 class="roboto-bold">Pixsterest</h1>
                         <p class="roboto-regular">O Pixsterest é um site que aprecia o estilo da pixelart. Aprenda com nossos tutoriais, compartilhe seus trabalhos e acima de tudo, ajude a espalhar este estilo.Comece Agora.</p>
@@ -70,66 +69,304 @@
                                                             
             </div>
             <div class="gallery-container" id="galeria">
-                <figure>
-                    <img src="images/guitar_man.webp" alt="">
-                    <figcaption class="roboto-bold">@Jo_Jonso</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/atticus_icon.webp" alt="">
-                    <figcaption class="roboto-bold">@Doggo_Pixel</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/Bulbassaur.webp" alt="">
-                    <figcaption class="roboto-bold">@4__0p</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/girl.webp" alt="">
-                    <figcaption class="roboto-bold">@bloob</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/mob_art.webp" alt="">
-                    <figcaption class="roboto-bold">@ジョンソ</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/mockup1.webp" alt="">
-                    <figcaption class="roboto-bold">@Cr0w_Guy</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/shovel_knight.webp" alt="">
-                    <figcaption class="roboto-bold">@The_Pixel</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/Swordman.webp" alt="">
-                    <figcaption class="roboto-bold">@Swordsman</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/Girl_finished.webp" alt="">
-                    <figcaption class="roboto-bold">@Allan Roy</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/gaia.webp" alt="">
-                    <figcaption class="roboto-bold">@夜の紳士</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/RPG.webp" alt="">
-                    <figcaption class="roboto-bold">@Knight</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
-                <figure>
-                    <img src="images/Hollow_knight.webp" alt="">
-                    <figcaption class="roboto-bold">@Pixel?</figcaption>
-                    <button class="btn btn-danger">Detalhes</button>
-                </figure>
+                <div>
+                    <figure>
+                        <img src="images/guitar_man.webp" alt="">
+                        <figcaption class="roboto-bold">@Jo_Jonso</figcaption>
+                    </figure>
+                    
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img1">Detalhes</button>
+
+                    <div class="modal fade" id="img1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: black;">@Jo_Jonso</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/guitar_man.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="images/atticus_icon.webp" alt="">
+                        <figcaption class="roboto-bold">@Doggo_Pixel</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img2">Detalhes</button>
+
+                    <div class="modal fade" id="img2" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" style="color: black;">@Doggo_Pixel</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/atticus_icon.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure>
+                        <img src="images/Bulbassaur.webp" alt="">
+                        <figcaption class="roboto-bold">@4__0p</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img3">Detalhes</button>
+
+                    <div class="modal fade" id="img3" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5"  style="color: black;">@4__0p</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/Bulbassaur.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="images/girl.webp" alt="">
+                        <figcaption class="roboto-bold">@bloob</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img4">Detalhes</button>
+
+                    <div class="modal fade" id="img4" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" style="color: black;">@bloob</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/girl.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="images/mob_art.webp" alt="">
+                        <figcaption class="roboto-bold">@ジョンソ</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img5">Detalhes</button>
+
+                    <div class="modal fade" id="img5" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" style="color: black;">@ジョンソ</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/mob_art.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="images/mockup1.webp" alt="">
+                        <figcaption class="roboto-bold">@Cr0w_Guy</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img6">Detalhes</button>
+
+                    <div class="modal fade" id="img6" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" style="color: black;">@Cr0w_Guy</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/mockup1.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="images/shovel_knight.webp" alt="">
+                        <figcaption class="roboto-bold">@The_Pixel</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img7">Detalhes</button>
+
+                    <div class="modal fade" id="img7" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" style="color: black;">@The_Pixel</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/shovel_knight.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="images/Swordman.webp" alt="">
+                        <figcaption class="roboto-bold">@Swordsman</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img8">Detalhes</button>
+
+                    <div class="modal fade" id="img8" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" style="color: black;">@Swordman</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/Swordman.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="images/Girl_finished.webp" alt="">
+                        <figcaption class="roboto-bold">@Allan Roy</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img9">Detalhes</button>
+
+                    <div class="modal fade" id="img9" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" style="color: black;">@Allan Roy</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/Girl_finished.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="images/gaia.webp" alt="">
+                        <figcaption class="roboto-bold">@夜の紳士</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img10">Detalhes</button>
+
+                    <div class="modal fade" id="img10" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" style="color: black;">@夜の紳士</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/gaia.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div>
+                    <figure>
+                        <img src="images/RPG.webp" alt="">
+                        <figcaption class="roboto-bold">@Knight</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img11">Detalhes</button>
+
+                    <div class="modal fade" id="img11" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" style="color: black;">@Knight</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/RPG.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <figure>
+                        <img src="images/Hollow_knight.webp" alt="">
+                        <figcaption class="roboto-bold">@Pixel?</figcaption>
+                    </figure>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#img12">Detalhes</button>
+
+                    <div class="modal fade" id="img12" tabindex="-1"  aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" style="color: black;">@Pixel?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/Hollow_knight.webp" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
     </main>
 
@@ -168,6 +405,8 @@
         </fieldset>
     </form>
     
+
+
     <footer>
         <p class="roboto-regular"> Copyright &copy; Jonso 2024</p>
     </footer>      
